@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab2.HelloController">
    <children>
+      <Text layoutX="14.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 gram stali kosztuje 0.1zł, a stali nierdzewniej 0.15zł" />
       <Button fx:id="btnMain" layoutX="42.0" layoutY="199.0" mnemonicParsing="false" onAction="#onBtnAction" style="-fx-background-color: purple;" text="Oblicz" textFill="WHITE" AnchorPane.leftAnchor="42.0" />
-      <TextField fx:id="wysokosc" id="wysokosc" layoutX="153.0" layoutY="72.0" />
+      <TextField id="wysokosc" fx:id="wysokosc" layoutX="153.0" layoutY="72.0" />
       <Text layoutX="14.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Podaj wysokość walca (h): " />
       <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program liczący ciężar i koszt materiału potrzebnego do wykonania walca " wrappingWidth="391.517578125" />
       <Text layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Podaj promień walca (r): " />
-      <TextField fx:id="promien" id="promien" layoutX="153.0" layoutY="101.0" />
+      <TextField id="promien" fx:id="promien" layoutX="153.0" layoutY="101.0" />
       <Text layoutX="14.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Podaj grubość blachy:  " />
-      <TextField fx:id="grubosc" id="grubosc" layoutX="153.0" layoutY="129.0" />
-      <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wartości należy podawać w milimetrach (mm)" />
-      <TextField fx:id="wynik" id="wynik" editable="false" layoutX="53.0" layoutY="250.0" prefHeight="200.0" prefWidth="498.0" />
+      <TextField id="grubosc" fx:id="grubosc" layoutX="153.0" layoutY="129.0" />
+      <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wartości należy podawać w centymeytach (cm)" />
+      <Label id="wynik" fx:id="wynik" layoutX="28.0" layoutY="242.0" prefHeight="172.0" prefWidth="392.0" />
    </children>
 </AnchorPane>
